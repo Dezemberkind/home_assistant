@@ -97,6 +97,7 @@ modbus:
         precision: 1
         unit_of_measurement: "°C"
         device_class: temperature
+        state_class: measurement
       - name: pluggit_t2
         unique_id: 2353c516-4931-4a51-96d1-b42ddbd38d03
         address: 134
@@ -105,6 +106,7 @@ modbus:
         precision: 1
         unit_of_measurement: "°C"
         device_class: temperature
+        state_class: measurement
       - name: pluggit_t3
         unique_id: fa9e1ead-233c-4ee5-b96c-0b80a8f2cccf
         address: 136
@@ -113,6 +115,7 @@ modbus:
         precision: 1
         unit_of_measurement: "°C"
         device_class: temperature
+        state_class: measurement
       - name: pluggit_t4
         unique_id: e9a47514-004b-4bed-a890-2abc38690074
         address: 138
@@ -121,6 +124,7 @@ modbus:
         precision: 1
         unit_of_measurement: "°C"
         device_class: temperature
+        state_class: measurement
       - name: pluggit_t5
         unique_id: 3388f642-8aab-4181-abc2-8c15d1933a9b
         address: 140
@@ -129,6 +133,7 @@ modbus:
         precision: 1
         unit_of_measurement: "°C"
         device_class: temperature
+        state_class: measurement
       - name: pluggit_power_of_preheater
         unique_id: 3aeeb340-68e2-4f8e-ba68-3f7f585be1be
         address: 160
@@ -156,7 +161,9 @@ modbus:
         address: 196
         data_type: uint32
         swap: word
+        state_class: measurement
         unit_of_measurement: "%"
+        device_class: humidity
       - name: pluggit_bypass_state_raw
         unique_id: 9f02798a-a204-4ed7-9225-e8f6f43b9e7a
         address: 198
@@ -209,6 +216,7 @@ modbus:
         data_type: uint32
         swap: word
         unit_of_measurement: "%"
+        device_class: humidity
       - name: pluggit_setpoint_of_the_t2
         unique_id: 64cf3a5b-ceed-4a76-a531-5155fd0b017b
         address: 344
@@ -240,7 +248,8 @@ modbus:
         address: 430
         data_type: uint32
         swap: word
-        unit_of_measurement: "ppm"
+        unit_of_measurement: ppm
+        state_class: measurement
       - name: pluggit_minimum_temperature_of_bypass_openning
         unique_id: 6723b60e-313c-49bc-a9bd-4459ff90b8dd
         address: 444
