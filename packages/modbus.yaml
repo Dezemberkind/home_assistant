@@ -73,12 +73,14 @@ modbus:
         data_type: float32
         swap: word
         unit_of_measurement: "rpm"
+        state_class: measurement
       - name: pluggit_fan2
         unique_id: 588acd09-7070-4b7f-a0c3-8c7042722bf0
         address: 102
         data_type: float32
         swap: word
         unit_of_measurement: "rpm"
+        state_class: measurement
       - name: pluggit_current_date_time_raw
         unique_id: 0d080373-4fc7-4a6d-b928-faeb0d8a98f4
         address: 108
@@ -248,7 +250,7 @@ modbus:
         address: 430
         data_type: uint32
         swap: word
-        unit_of_measurement: ppm
+        unit_of_measurement: "ppm"
         state_class: measurement
       - name: pluggit_minimum_temperature_of_bypass_openning
         unique_id: 6723b60e-313c-49bc-a9bd-4459ff90b8dd
